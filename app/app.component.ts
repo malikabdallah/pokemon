@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { POKEMONS } from './mock-pokemon';
-import { Pokemon } from './Pokemon';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +7,11 @@ import { Pokemon } from './Pokemon';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    this.pokemons=POKEMONS;
+   // this.pokemons=POKEMONS;
   }
   title = 'pokemon';
-  public pokemons:Pokemon[];
+  
+  /*public pokemons:Pokemon[];
   public value:string='';
   public age=20;
 
@@ -30,4 +29,5 @@ export class AppComponent implements OnInit {
   onKeyValue(valeur:string){
     this.value="Bonjour "+valeur;
   }
+  */
 }
