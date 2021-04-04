@@ -1,0 +1,43 @@
+<h1>bonjour {{title}}</h1>
+<button (click)="onClick()">clicker</button>
+<br/>
+<input (keyup)="onKey($event)">
+<br/>
+{{value}}
+
+
+<br/>
+
+<input #box (keyup)="0">
+<br/>
+{{box.value}}
+
+
+<br/>
+
+<input #boxe (keyup)="onKeyValue(boxe.value)">
+<br/>
+{{value}}
+
+
+<br/>
+<!--
+<input #boxes (keyup.enter)="values=boxes.value" (blur)="values=boxes.value">
+<br/>
+<br/>
+-->
+<p *ngIf="age >= 18">vous etes majeur</p>
+<br/>
+
+<ul>
+    <li *ngFor="let pokemon of pokemons"> {{pokemon.name}} </li>
+</ul>
+
+<br/>
+<nav>
+  <div class="nav-wrapper teal">
+    <a href="#" class="brand-logo center">pokemon-app</a>
+  </div>
+</nav>
+  
+<router-outlet></router-outlet>
